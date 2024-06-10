@@ -17,6 +17,12 @@ const config: Config = {
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
     },
+    colors: {
+      primary: "#074864",
+      secondary: "#0d839c",
+      white: "#fff",
+      black: "#000",
+    },
   },
   plugins: [],
 };
