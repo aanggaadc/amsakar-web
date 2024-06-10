@@ -2,7 +2,6 @@
 
 import { useFormStatus } from "react-dom";
 import { cn } from "@/lib/utils";
-import { Children } from "react";
 
 interface ButtonSubmitProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -26,7 +25,7 @@ export const ButtonSubmit = ({
       {...props}
       disabled={pending}
     >
-      {children}
+      {pending ? "Mengirim..." : children}
     </button>
   );
 };

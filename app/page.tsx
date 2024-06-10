@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { InputField } from "@/components/input-field";
-import { TextArea } from "@/components/text-area";
-import { ButtonSubmit } from "@/components/button-submit";
+import SupportForm from "./form";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (
@@ -58,51 +57,10 @@ export default function Home() {
         </div>
 
         <div className="mt-8 mx-auto w-full max-w-sm lg:max-w-lg">
-          <form className="space-y-6">
-            <InputField
-              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-              label="Nama"
-              id="nama"
-              name="nama"
-              type="text"
-              autoComplete="off"
-              required
-            />
-
-            <InputField
-              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-              label="Nomor Telepon"
-              id="phone"
-              name="phone"
-              type="number"
-              autoComplete="off"
-              required
-            />
-
-            <TextArea
-              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-              label="Komentar"
-              id="komentar"
-              name="komentar"
-              required
-              autoComplete="off"
-            />
-
-            {/* {formState.code !== 200 && (
-        <p className="text-sm text-center text-[red] !mt-4">
-          {formState.message}
-        </p>
-      )} */}
-
-            <ButtonSubmit
-              type="submit"
-              className="block w-full rounded-md font-montserrat text-white bg-primary hover:bg-secondary transition-[background] duration-300"
-            >
-              Kirim
-            </ButtonSubmit>
-          </form>
+          <SupportForm />
         </div>
       </section>
+      <Toaster position="bottom-right" reverseOrder={false} />
     </>
   );
 }
