@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Navigation from "./navigation";
 
 export default function Header() {
   return (
@@ -12,15 +13,7 @@ export default function Header() {
           height="500"
         />
 
-        <nav>
-          <ul className="flex items-center">
-            <li>
-              <button className="font-montserrat text-sm md:text-base p-2 rounded-md text-white bg-[linear-gradient(to_right,#074864,#074e6a,#08536f,#085975,#095f7a)]">
-                Dukung Bang Amsakar
-              </button>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
       </div>
     </header>
   );
