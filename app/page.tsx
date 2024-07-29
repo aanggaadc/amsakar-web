@@ -49,13 +49,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="form"
-        className="flex h-screen flex-col justify-center items-center px-6 py-12 lg:px-8 font-montserrat"
-      >
+      <section className="flex h-screen flex-col justify-center items-center px-6 py-12 lg:px-8 font-montserrat">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <h2 className="text-center text-2xl text-secondary font-bold leading-9 tracking-tight text-gray-900 md:text-4xl">
-            Dukung <br /> <span className="text-primary">Bang Amsakar</span>
+            Rumah <span className="text-primary">Amsakar</span> <br /> Mendengar
           </h2>
         </div>
 
