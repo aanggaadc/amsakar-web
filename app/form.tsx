@@ -57,7 +57,7 @@ export default function SupportForm() {
         name="Komentar"
         required
         autoComplete="off"
-        placeholder="Contoh: Saya ingin berpatasipasi sebagai content creator"
+        placeholder="Pesan saya"
       />
 
       <ButtonSubmit className="block w-full rounded-md font-montserrat text-white bg-primary hover:bg-secondary transition-[background] duration-300">
